@@ -1,9 +1,11 @@
+const general = require('./generalRoutes.js')
+const oauthEatStreet = require('./oauthEatStreet.js');
+
 module.exports = {
   Handler
 }
 
 function Handler(app) {
-  app.get('/', (req, res)=>{
-    res.sendFile('index.html');
-  });
+  general.init(app);
+  oauthEatStreet.init(app);
 }
