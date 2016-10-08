@@ -2,6 +2,6 @@ module.exports = {
   init
 }
 
-function init(app) {
-  //
+function init(app, config) {
+  console.log(config.EatStreet);
 }
