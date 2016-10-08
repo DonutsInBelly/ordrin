@@ -1,5 +1,9 @@
 @import 'https://fonts.googleapis.com/css?family=Montserrat:400,700';
 
+body {
+	background-color: #F4F2F0;
+}
+
 
 .logo-img > img {
 	transform: rotate(180deg);
@@ -26,6 +30,7 @@ h5 {
 }
 
 .uploader-label {
+	background-color: #F4F2F0;
 	color: #EA654A;
 	border-color: #EA654A;
 }
@@ -41,8 +46,15 @@ h5 {
 
 }
 
+.man-eating {
+	position: absolute;
+	right: 0;
+	width: 500px;
+	top: 25px;
+}
+	
 .text-picture {
-	background-color: #FFD637;
+	background-color: #FFDA4B;
 	color: white;
 	padding-bottom: 10px;
 }
