@@ -1,0 +1,61 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:400,700';
+
+
+.logo-img > img {
+	transform: rotate(180deg);
+}
+
+.logo-and-title {
+	color: #EA654A;
+
+}
+
+h1 {
+	line-height: 0px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+h5 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.food-uploader-div {
+	margin-top: 100px;
+	color: #EA654A;
+
+}
+
+.uploader-label {
+	color: #EA654A;
+	border-color: #EA654A;
+}
+
+.uploader-label:hover {
+	color: white;
+	background-color: #EA654A;
+	border: none;
+}
+
+.food-uploader {
+	display: none !important;
+
+}
+
+.text-picture {
+	background-color: #FFD637;
+	color: white;
+	padding-bottom: 10px;
+}
+
+.text-picture > h1 {
+	color: #EA654A;
+}
+
+.footer-link {
+	color: white;
+	margin: 0 10px 0;
+}
+
+#heart {
+	color: #EA654A;
+}
