@@ -1,17 +1,22 @@
 @import 'https://fonts.googleapis.com/css?family=Montserrat:400,700';
 
 body {
-	background-color: #F4F2F0;
+	background-color: #F7CB41;
 }
 
 
-.logo-img > img {
+.logo-and-title > img {
 	transform: rotate(180deg);
+	float: left;
+	width: 150px;
 }
 
-.logo-and-title {
+.logo-and-title > h1 {
+	position: relative;
 	color: #EA654A;
-
+	float: left;
+	line-height: 75px;
+	left:-30px;
 }
 
 h1 {
@@ -19,13 +24,14 @@ h1 {
 	font-family: 'Montserrat', sans-serif;
 }
 
-h5 {
+p, h2, h3, h4, h5 {
 	font-family: 'Montserrat', sans-serif;
 }
 
 .food-uploader-div {
-	margin-top: 100px;
+	margin-top: 150px;
 	color: #EA654A;
+	margin-bottom: 125px;
 
 }
 
@@ -46,15 +52,16 @@ h5 {
 
 }
 
-.man-eating {
-	position: absolute;
-	right: 0;
+.man-eating-col {
 	width: 500px;
-	top: 25px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
 }
 	
 .text-picture {
-	background-color: #FFDA4B;
+
 	color: white;
 	padding-bottom: 10px;
 }
@@ -66,8 +73,20 @@ h5 {
 .footer-link {
 	color: white;
 	margin: 0 10px 0;
+	text-decoration: none;
+}
+
+.footer-link:hover {
+	text-decoration: none;
+	color: #EA654A;
 }
 
 #heart {
 	color: #EA654A;
+}
+
+.pane-one {
+	position: relative;
+	background-color: #F4F2F0;
+	z-index: 0;
 }
