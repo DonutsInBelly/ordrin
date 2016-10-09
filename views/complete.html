@@ -17,7 +17,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ordr&bull;in | login</title>
+  <title>ordr&bull;in | complete</title>
   <script src="/js/jquery-3.1.1.min"></script>
   <script src="/js/ordrin-custom.js"></script>
   <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
@@ -35,13 +35,15 @@
       </div>
 
       <div class="col-xs-12 col-sm-4">
-        <form class="es-login">
-          <h5 style="text-transform: uppercase">Log into your EatStreet account</h5>
+        <div class="completed">
+          <h5 style="text-transform: uppercase">NICE! THIS IS WHAT YOU ORDERED:</h5>
           <br>
-          <input name="username" type="username" class="es-username-login form-control" placeholder="Username">
-          <input name="password" type="password" class="es-password-login form-control" placeholder="Password">
-          <button type="submit" class="btn btn-default es-submit"><h4>Submit  &#127828;</h4></button>
-        </form>
+          <h4 style="text-transform: uppercase">Order # <span id="orderID" name="orderID">1234567890</span></h4>
+          <p><span id="orderDesc" name="orderDesc">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum excepturi aspernatur perspiciatis ipsum, expedita, odit dolore! Laborum a esse, assumenda voluptatum fugit ut veniam quis pariatur blanditiis animi impedit facere!
+          </span></p>
+          <h4 style="text-transform: uppercase">Total: $<span id="orderPrice" name="orderPrice">123.42</span><h4 style="text-transform: uppercase">
+        </div>
       </div>
 
       <div class="col-sm-4 hidden-xs man-eating-col">

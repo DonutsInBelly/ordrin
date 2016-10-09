@@ -20,12 +20,12 @@ body {
 }
 
 h1 {
-	line-height: 0px;
+	line-height: 20px;
 	font-family: 'Montserrat', sans-serif;
 }
 
 p, h2, h3, h4, h5 {
-	line-height: 0px;
+	line-height: 15px;
 	font-family: 'Montserrat', sans-serif;
 }
 
@@ -64,7 +64,7 @@ p, h2, h3, h4, h5 {
 }
 
 .text-picture {
-	margin-top: 10px;
+	margin-top: 5px;
 	color: white;
 }
 
@@ -73,7 +73,11 @@ p, h2, h3, h4, h5 {
 }
 
 .footer-links {
-	margin-top: 20px;
+	margin-top: 10px;
+}
+
+p.footer-links {
+	line-height: 0px;
 }
 
 .footer-link {
@@ -99,7 +103,7 @@ p, h2, h3, h4, h5 {
 	height: 90vh;
 }
 
-.es-login {
+.es-login, .completed {
 	margin-top: 150px;
 	color: #EA654A;
 	margin-bottom: 150px;
