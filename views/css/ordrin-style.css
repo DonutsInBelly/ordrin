@@ -37,6 +37,8 @@ p, h2, h3, h4, h5 {
 }
 
 .uploader-label {
+	width: 100%;
+	padding: 16px 0 16px 0;
 	background-color: #F4F2F0;
 	color: #EA654A;
 	border-color: #EA654A;
@@ -45,7 +47,7 @@ p, h2, h3, h4, h5 {
 .uploader-label:hover {
 	color: white;
 	background-color: #EA654A;
-	border: none;
+	border: 1px solid #EA654A;
 }
 
 .food-uploader {
