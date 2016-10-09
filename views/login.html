@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ordr&bull;in</title>
+  <title>ordr&bull;in | login</title>
 
   <script src="/js/ordrin-custom.js"></script>
   <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
@@ -22,18 +22,13 @@
       </div>
 
       <div class="col-xs-12 col-sm-4">
-        <div class="file-input food-uploader-div">
-          <h5 style="text-transform: uppercase">Look for sweet eats using food pictures</h5>
+        <form class="es-login">
+          <h5 style="text-transform: uppercase">Log into your EatStreet account</h5>
           <br>
-          <label class="btn btn-default btn-file uploader-label"><h4>Upload</h4><input type="file" class="food-uploader">
-          </label>
-          <br><br><br>
-          <h5 style="text-transform: uppercase">Or text your picture to</h5>
-          <br>
-          <h1>(911) HUN-GRY!</h1>
-          <br><br>
-
-        </div>
+          <input name="username" type="username" class="es-username-login form-control" placeholder="Username">
+          <input name="password" type="password" class="es-password-login form-control" placeholder="Password">
+          <button type="submit" class="btn btn-default es-submit"><h4>Submit</h4></button>
+        </form>
       </div>
 
       <div class="col-sm-4 hidden-xs man-eating-col">

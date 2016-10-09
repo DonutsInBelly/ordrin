@@ -25,6 +25,7 @@ h1 {
 }
 
 p, h2, h3, h4, h5 {
+	line-height: 0px;
 	font-family: 'Montserrat', sans-serif;
 }
 
@@ -36,6 +37,8 @@ p, h2, h3, h4, h5 {
 }
 
 .uploader-label {
+	width: 100%;
+	padding: 16px 0 16px 0;
 	background-color: #F4F2F0;
 	color: #EA654A;
 	border-color: #EA654A;
@@ -44,7 +47,7 @@ p, h2, h3, h4, h5 {
 .uploader-label:hover {
 	color: white;
 	background-color: #EA654A;
-	border: none;
+	border: 1px solid #EA654A;
 }
 
 .food-uploader {
@@ -59,20 +62,23 @@ p, h2, h3, h4, h5 {
 	right: 0;
 	z-index: -1;
 }
-	
-.text-picture {
 
+.text-picture {
+	margin-top: 10px;
 	color: white;
-	padding-bottom: 10px;
 }
 
 .text-picture > h1 {
 	color: #EA654A;
 }
 
+.footer-links {
+	margin-top: 20px;
+}
+
 .footer-link {
 	color: white;
-	margin: 0 10px 0;
+	margin: 0px 10px 0px 10px;
 	text-decoration: none;
 }
 
@@ -89,4 +95,39 @@ p, h2, h3, h4, h5 {
 	position: relative;
 	background-color: #F4F2F0;
 	z-index: 0;
+	height: 90vh;
+}
+
+.es-login {
+	margin-top: 150px;
+	color: #EA654A;
+	margin-bottom: 150px;
+}
+
+.es-username-login, .es-password-login, .es-submit {
+	border: none;
+	height: 50px;
+	margin-top: 10px;
+}
+
+.es-submit {
+	color: #EA654A;
+	background-color: transparent;
+	border: #EA654A 1px solid;
+	width: 100%;
+}
+
+.es-submit:hover {
+	background-color: #EA654A;
+	color: white;
+}
+
+.form-control:focus {
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 0, 0, 0.5);
+
+}
+
+::-webkit-input-placeholder {
+	font-family: 'Montserrat', sans-serif;
+	
 }
