@@ -22,6 +22,19 @@ function init(app, config) {
       }
       console.log(result);
       console.log('done');
+      res.render('complete.ejs');
+      if (result.error == true) {
+        res.render('complete.ejs', {
+          error: result.details
+        });
+      } else {
+        res.render('complete.ejs', {
+          id: result.apiKey,
+          name: result.items[0].name,
+          price: result.items[0].totalPrice
+        });
+      }
+
     });
 
   });

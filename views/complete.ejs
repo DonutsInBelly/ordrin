@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- 
+<!--
  .----------------.  .----------------.  .----------------.  .----------------.  .----------------.  .----------------.  .-----------------.
 | .--------------. || .--------------. || .--------------. || .--------------. || .--------------. || .--------------. || .--------------. |
 | |     ____     | || |  _______     | || |  ________    | || |  _______     | || |      _       | || |     _____    | || | ____  _____  | |
@@ -10,10 +10,10 @@
 | |   `.____.'   | || | |____| |___| | || | |________.'  | || | |____| |___| | || |   \/|_|\/    | || |    |_____|   | || ||_____|\____| | |
 | |              | || |              | || |              | || |              | || |              | || |              | || |              | |
 | '--------------' || '--------------' || '--------------' || '--------------' || '--------------' || '--------------' || '--------------' |
- '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------' 
+ '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'
  -->
 <html lang="en">
-<head>                                                                                                                                                                
+<head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,7 +25,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
 </head>
 
-<body>  
+<body>
   <div class="container-fluid">
 
     <div class="row text-center pane-one">
@@ -38,11 +38,15 @@
         <div class="completed">
           <h5 style="text-transform: uppercase">NICE! THIS IS WHAT YOU ORDERED:</h5>
           <br>
-          <h4 style="text-transform: uppercase">Order # <span id="orderID" name="orderID">1234567890</span></h4>
+          <h4 style="text-transform: uppercase">Order # <span id="orderID" name="orderID"><% if(!error) { %><%= id %><% } %></span></h4>
           <p><span id="orderDesc" name="orderDesc">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum excepturi aspernatur perspiciatis ipsum, expedita, odit dolore! Laborum a esse, assumenda voluptatum fugit ut veniam quis pariatur blanditiis animi impedit facere!
+            <% if(error) { %>
+            <%= error %>
+            <% } else { %>
+            <%= name %>
+            <% } %>
           </span></p>
-          <h4 style="text-transform: uppercase">Total: $<span id="orderPrice" name="orderPrice">123.42</span><h4 style="text-transform: uppercase">
+          <h4 style="text-transform: uppercase">Total: $<span id="orderPrice" name="orderPrice"><% if(!error) { %><%= price %><% } %></span><h4 style="text-transform: uppercase">
         </div>
       </div>
 
@@ -54,7 +58,7 @@
 
     <div id="footer-stuff" class="row text-center text-picture"></div>
 
-    
+
 
   </div>
 </body>
