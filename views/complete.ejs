@@ -40,7 +40,7 @@
           <br>
           <h4 style="text-transform: uppercase">Order # <span id="orderID" name="orderID"><% if(!error) { %><%= id %><% } %></span></h4>
           <p><span id="orderDesc" name="orderDesc">
-            <% if(error) { %>
+            <% if(error!=false) { %>
             <%= error %>
             <% } else { %>
             <%= name %>
