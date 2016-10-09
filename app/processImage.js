@@ -4,8 +4,10 @@ module.exports = {
 
 function init(app, config) {
 	app.post('/image', (req, res)=>{
-		var twilio = require('twilio')();
+		var twilio = require('twilio');
 		var Clarifai = require('clarifai');
+
+		var urlString = req.body.MediaUrl0;
 
 		// init clarifai
 		var app = new Clarifai.App(
@@ -15,17 +17,26 @@ function init(app, config) {
 
 		// get concepts array with sample pizza picture
 		var concepts = [];
-		app.models.predict(Clarifai.GENERAL_MODEL, 'http://www.cicis.com/media/1138/pizza_trad_pepperoni.png').then(
+		app.models.predict(Clarifai.GENERAL_MODEL, urlString).then(
 		  function(response) {
 		    for(var i in response.data.outputs[0].data.concepts) {
 		    	concepts.push(response.data.outputs[0].data.concepts[i].name);
 		    	console.log(concepts[i]);
 		    }
+
+		    // get eatstreet
+
+
+		    var resp = new twilio.TwimlResponse();
+			resp.message(concepts[0]);
+			res.send(resp.toString());
 		  },
 		  function(err) {
 		    console.error(err);
 		  }
 		);
+
+
 	});
 }
 
