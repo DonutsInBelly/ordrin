@@ -1,7 +1,17 @@
 module.exports = {
-  'EatStreet': '',
+  'EatStreet': {
+    'api': '',
+    'me': '',
+    'credit': ''
+  },
   'clarifai':{
     'CLIENT_ID': '',
     'CLIENT_SECRET': ''
+  },
+  'twilio':{
+    'SID': '',
+    'AUTHTOKEN': '',
+    'ACTUAL_SID': '',
+    'ACTUAL_SECRET': ''
   }
 }
