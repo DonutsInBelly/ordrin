@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/dominusbelli/ordrin#readme",
   "dependencies": {
-    "express": "^4.14.0"
+    "clarifai": "^2.0.9",
+    "express": "^4.14.0",
+    "request": "^2.75.0"
   }
 }

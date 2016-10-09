@@ -5,8 +5,8 @@ module.exports = {
 function init(app, config) {
 	var Clarifai = require('clarifai');
 	var app = new Clarifai.App(
-		config.CLIENT_ID,
-		config.CLIENT_SECRET
+		config.clarifai.CLIENT_ID,
+		config.clarifai.CLIENT_SECRET
 	);
 
 	// using the sample test code
@@ -23,4 +23,3 @@ function init(app, config) {
 	  }
 	);
 }
-
