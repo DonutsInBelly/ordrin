@@ -24,11 +24,8 @@ function init(app, config) {
 		    	console.log(concepts[i]);
 		    }
 
-		    // get eatstreet
-
-
 		    var resp = new twilio.TwimlResponse();
-			resp.message(concepts[0]);
+			resp.message('Click here to complete your order! ' + config.base_url + 'now?food=' + concepts[0]);
 			res.send(resp.toString());
 		  },
 		  function(err) {
@@ -39,4 +36,3 @@ function init(app, config) {
 
 	});
 }
-

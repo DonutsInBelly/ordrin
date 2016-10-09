@@ -3,5 +3,6 @@ module.exports = {
   'clarifai':{
     'CLIENT_ID': '',
     'CLIENT_SECRET': ''
-  }
+  },
+  'base_url': ''
 }
