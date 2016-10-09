@@ -28,6 +28,7 @@ function init(app, config) {
         });
       } else {
         res.render('complete.ejs', {
+          error: false,
           id: result.apiKey,
           name: result.items[0].name,
           price: result.items[0].totalPrice
