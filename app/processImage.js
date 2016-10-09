@@ -9,16 +9,18 @@ function init(app, config) {
 		config.CLIENT_SECRET
 	);
 
-	// sample test code
-	// predict the contents of an image by passing in a url
-	app.models.predict(Clarifai.GENERAL_MODEL, 'https://samples.clarifai.com/metro-north.jpg').then(
+	// using the sample test code
+	var concepts = [];
+	app.models.predict(Clarifai.GENERAL_MODEL, 'http://www.cicis.com/media/1138/pizza_trad_pepperoni.png').then(
 	  function(response) {
-	    console.log(response);
+	    for(var i in response.data.outputs[0].data.concepts) {
+	    	concepts.push(response.data.outputs[0].data.concepts[i].name);
+	    	console.log(concepts[i]);
+	    }
 	  },
 	  function(err) {
 	    console.error(err);
 	  }
 	);
 }
-
 

@@ -1,3 +1,5 @@
 module.exports = {
-  'EatStreet': ''
+  'EatStreet': '',
+  'CLIENT_ID': '',
+  'CLIENT_SECRET': '',
 }
