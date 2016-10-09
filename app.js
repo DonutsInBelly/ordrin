@@ -7,6 +7,7 @@ var PORT = process.env.PORT || 8080;
 app.use(express.static(__dirname + '/views'));
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
+app.set('view engine', 'ejs');
 routes.Handler(app);
 
 app.listen(PORT);

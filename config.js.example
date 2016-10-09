@@ -1,5 +1,9 @@
 module.exports = {
-  'EatStreet': '',
+  'EatStreet': {
+    'api': '',
+    'me': '',
+    'credit': ''
+  },
   'clarifai':{
     'CLIENT_ID': '',
     'CLIENT_SECRET': ''
