@@ -5,9 +5,15 @@ module.exports = {
 }
 
 function init(app, config) {
+  app.get('/login', (req, res)=>{
+    res.sendfile('views/testlogin.html');
+  });
+
   app.post('/login', (req, res)=>{
     var current_user = req.body.username;
     var current_password = req.body.password;
+    console.log(current_user);
+    console.log(current_password);
 
     request({
       method: 'POST',
@@ -16,13 +22,18 @@ function init(app, config) {
         'X-Access-Token': config.EatStreet,
         'Content-Type': 'application/json'
       },
-      formData: {
+      body: {
         email: current_user,
         password: current_password
       }
     },
     (error, response, body)=>{
+      if(error) {
+        res.write(error)
+      }
       console.log(body);
+      res.end();
     });
+    res.sendfile('views/testlogin.html');
   });
 }
